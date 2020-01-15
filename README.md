@@ -1,7 +1,9 @@
 # Hackintosh-OpenCore-GA-Z77X-UD5H-3770K-HD4000
 
 OpenCore EFI for Gigabyte GA-Z77X-UD5H, i7 3770K, HD4000 graphics
+
 Current Version is 0.5.4-DEBUG built with OCBuilder
+
 Config built by following this guide:
 https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/
 
