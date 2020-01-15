@@ -668,9 +668,9 @@
 			<key>DisplayDelay</key>
 			<integer>0</integer>
 			<key>DisplayLevel</key>
-			<integer>2147483650</integer>
+			<integer>2147483714</integer>
 			<key>Target</key>
-			<integer>3</integer>
+			<integer>83</integer>
 		</dict>
 		<key>Entries</key>
 		<array>
@@ -904,7 +904,7 @@
 		<key>Quirks</key>
 		<dict>
 			<key>AvoidHighAlloc</key>
-			<false/>
+			<true/>
 			<key>ClearScreenOnModeSwitch</key>
 			<false/>
 			<key>ExitBootServicesDelay</key>
