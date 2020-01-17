@@ -11,9 +11,7 @@ I've found no USB mapping necessary to run my back panel USB and two front panel
 
 No DDST necessary for this board (thanks Gigabyte), only SDST-EC which will need to be uniquely generated for your CPU if not running a i7 3770K.
 
-Marvell 88SE9172 SATA 6Gb/s Controller is not functional. If any drives are connected to this controller, OpenCore will stall after "connecting drivers" step and take up to 20 minutes to reach picker menu.
-
-I have included IO80211Family.kext to support my old Atheros based WiFi card. You probably don't need this kext.
+Marvell 88SE9172 SATA Controller is not fully functional. If any drives are connected to this controller, OpenCore will stall after "connecting drivers" step and take up to 20 minutes to reach picker menu. The controller appears as "Generic AHCI Controller" in SystemInformation.
 
 The config is currently set to heavy logging on screen and to file. This slows down the boot time signifcantly. I will remove logging commands once I solve a couple of issues.
 
