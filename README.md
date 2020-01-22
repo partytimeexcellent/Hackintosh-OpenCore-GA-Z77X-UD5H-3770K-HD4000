@@ -16,7 +16,7 @@ This EFI folder is working for my build but you should not expect it to work for
 ### ISSUES:
 
 * I'm not able to boot into the Recovery partition. Still trying to find a solution.
-* OpenCore has a [known bug](https://github.com/acidanthera/bugtracker/issues/669) causing the onboard Marvell 88SE9172 SATA Controller not work correctly. If any drives are connected to this controller, OpenCore will stall after "connecting drivers" step and take up to 20 minutes to reach picker menu. The controller appears as "Generic AHCI Controller" in SystemInformation. This controller works in Clover so there must be a solution. Affects my ASM1062 PCI SATA controller as well. For now my boot drives are connected to the Intel 6Gb/s SATA ports (SATA 0/1, white ports on motherboard)
+* OpenCore has a [known bug](https://github.com/acidanthera/bugtracker/issues/669) affecting 3rd party SATA controllers. The onboard Marvell 88SE9172 SATA Controller, as well as a PCI connected ASM1062, do not work correctly. If any drives (bootable EFI or data only) are connected to these controllers, OpenCore will stall after "connecting drivers" step and take about 4 minutes to reach picker menu. Any bootable volumes on those ports will fail to boot. The controllers appear as "Generic AHCI Controller" in System Information. This problem is not present in Clover so there must be a solution. For now my drives are connected to the Intel Z77 6Gb/s SATA ports (SATA 0/1, white ports on motherboard)
 
 ### UPDATES:
 
