@@ -15,6 +15,7 @@ This EFI folder is working for my build but you should not expect it to work for
 
 ### ISSUES:
 
+* BIOS clock won't stay in sync with MacOS. I can set it manually to the correct time, however as soon as it boots into an OS, MacOS or Windows, it resets itself to be off by several hours.
 * ~~I'm not able to boot into the Recovery partition. Still trying to find a solution.~~
 * ~~OpenCore has a [known bug](https://github.com/acidanthera/bugtracker/issues/669) affecting 3rd party SATA controllers. The onboard Marvell 88SE9172 SATA Controller, as well as a PCI connected ASM1062, do not work correctly. If any drives (bootable EFI or data only) are connected to these controllers, OpenCore will stall after "connecting drivers" step and take about 4 minutes to reach picker menu. Any bootable volumes on those ports will fail to boot. The controllers appear as "Generic AHCI Controller" in System Information. This problem is not present in Clover so there must be a solution. For now my drives are connected to the Intel Z77 6Gb/s SATA ports (SATA 0/1, white ports on motherboard)~~
 
@@ -53,4 +54,4 @@ MaLd0n for help with DSDT patches and useful guides on the [Olarila.com Forum](h
 
 [Reddit Hackintosh](reddit.com/r/hackintosh)\
 [tonymacx86 forum](https://www.tonymacx86.com/forums/)\
-[InsanelyMac OSx86 Project Forum](https://www.insanelymac.com/forum/85-osx86-project/)\
+[InsanelyMac OSx86 Project Forum](https://www.insanelymac.com/forum/85-osx86-project/)
